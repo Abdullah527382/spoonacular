@@ -26,7 +26,6 @@ type GetConversationSuggests200ResponseSuggests struct {
 // will change when the set of required properties is changed
 func NewGetConversationSuggests200ResponseSuggests( []GetConversationSuggests200ResponseSuggestsInner) *GetConversationSuggests200ResponseSuggests {
 	this := GetConversationSuggests200ResponseSuggests{}
-	this._ = 
 	return &this
 }
 

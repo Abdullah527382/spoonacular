@@ -62,7 +62,6 @@ type APIClient struct {
 
 	ProductsApi *ProductsApiService
 
-	RecipesApi *RecipesApiService
 
 	WineApi *WineApiService
 }
@@ -89,7 +88,6 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.MenuItemsApi = (*MenuItemsApiService)(&c.common)
 	c.MiscApi = (*MiscApiService)(&c.common)
 	c.ProductsApi = (*ProductsApiService)(&c.common)
-	c.RecipesApi = (*RecipesApiService)(&c.common)
 	c.WineApi = (*WineApiService)(&c.common)
 
 	return c

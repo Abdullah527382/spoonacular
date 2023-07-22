@@ -1,4 +1,4 @@
-module github.com/abdullah527382/spoonacular
+module github.com/Abdullah527382/spoonacular
 
 go 1.13
 

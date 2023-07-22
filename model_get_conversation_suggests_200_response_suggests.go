@@ -17,7 +17,7 @@ import (
 
 // GetConversationSuggests200ResponseSuggests struct for GetConversationSuggests200ResponseSuggests
 type GetConversationSuggests200ResponseSuggests struct {
-	_ []GetConversationSuggests200ResponseSuggestsInner `json:"_"`
+	inner []GetConversationSuggests200ResponseSuggestsInner `json:"_"`
 }
 
 // NewGetConversationSuggests200ResponseSuggests instantiates a new GetConversationSuggests200ResponseSuggests object
@@ -44,7 +44,7 @@ func (o *GetConversationSuggests200ResponseSuggests) Get_() []GetConversationSug
 		return ret
 	}
 
-	return o._
+	return o.inner
 }
 
 // Get_Ok returns a tuple with the _ field value
@@ -53,18 +53,18 @@ func (o *GetConversationSuggests200ResponseSuggests) Get_Ok() ([]GetConversation
 	if o == nil {
 		return nil, false
 	}
-	return o._, true
+	return o.inner, true
 }
 
 // Set_ sets field value
 func (o *GetConversationSuggests200ResponseSuggests) Set_(v []GetConversationSuggests200ResponseSuggestsInner) {
-	o._ = v
+	o.inner = v
 }
 
 func (o GetConversationSuggests200ResponseSuggests) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if true {
-		toSerialize["_"] = o._
+		toSerialize["_"] = o.inner
 	}
 	return json.Marshal(toSerialize)
 }
